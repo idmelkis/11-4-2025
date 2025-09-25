@@ -1,3 +1,3 @@
 # Tēmas
 
-1. Ievads python
+1.,2. Ievads python
