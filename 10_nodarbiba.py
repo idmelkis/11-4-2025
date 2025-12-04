@@ -80,7 +80,7 @@ for key, value in vardnica.items():
 print(dict2)
 
 # Uzdevums i/ni
-# Izveidot vārdnīcu no sarakstiem keys un values, kur keys ir atslēgas, un values ir vērtības
+# Cikliski izveidot vārdnīcu no sarakstiem keys un values, kur keys ir atslēgas, un values ir vērtības
 # Ir garantēts, ka keys un values sarakstu garumi ir vienādi.
 import random
 keys = [ 1, 2, "10", 3, random.randint(10, 100) ]
