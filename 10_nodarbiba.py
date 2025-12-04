@@ -85,3 +85,8 @@ print(dict2)
 import random
 keys = [ 1, 2, "10", 3, random.randint(10, 100) ]
 values = [ "viens", 4, False, [1,3,4], random.randint(0, 100) ]
+vardn = {}
+for iii in range(len(keys)):
+    vardn.update({keys[iii]: values[iii]})
+    #vardn[iii] = values[iii]
+print(vardn)
