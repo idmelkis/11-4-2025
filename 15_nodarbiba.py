@@ -37,3 +37,38 @@ masina_1.paatrinat()
 #Izveidot objektu - palaist savienošanās, savienošanās, skaņas līmeņa palielināšanas un dziesmas spēlēšanas funkcijas.
 # (!) Klasei jāatbilst diagrammai 1:1
 # Jāiesniedz gan .drawio, gan .py fails.
+class Austinas:
+    modelis :str
+    brends :str
+    savienots :bool = False
+    skalums :float = 0.0
+    dziesmas_statuss :str = ""
+
+    def __init__(self, modelis, skalums):
+        self.modelis = modelis
+        self.skalums = skalums
+    def pieslegties(self):
+        # Uzlabot: sekot kādai ierīcei ir pieslēdzies
+        self.savienots = True
+    def atslegties(self):
+        # Uzlabot: sekot kādai ierīcei ir pieslēdzies
+        self.savienots = False
+    def palielinat_skalumu(self):
+        # Var padot arī kā parametru - vai vienkārši palielināt par noteiktu %
+        self.skalums += 5
+    def samazinat_skalumu(self):
+        if self.skalums > 0: # Skaļums nevar būt negatīvs!
+            self.skalums -= 5
+    def spelet_dziesmu(self, dziesma):
+        # Uzlabot: sekot līdzi dziesmas statusam
+        print(f"Spēlē {dziesma}")
+        self.dziesmas_statuss = dziesma
+    def __str__(self):
+        return f"{self.brends} {self.modelis} - Skaļums {self.skalums} - {self.dziesmas_statuss if len(self.dziesmas_statuss) > 0 else ''}"
+
+
+#Izveidot objektu - palaist savienošanās, skaņas līmeņa palielināšanas un dziesmas spēlēšanas funkcijas, jāizvada informācija par austiņām (__str__).
+obj = Austinas("???", "???")
+obj.savienots()
+obj.palielinat_skalumu()
+print(obj)
