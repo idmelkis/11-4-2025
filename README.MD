@@ -21,3 +21,5 @@ drawio failus var atvērt izmantojot http://draw.io vietni vai Visual Studio Cod
 22., 23 - Faili (stukturēti failu formāti, mapju pārvalde)   
 24. - Faili  
 25. - Kontroldarbs
+
+## Lai izdevusies vasara!
